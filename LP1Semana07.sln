@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismo", "Polimorfism
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameUnits", "GameUnits\GameUnits.csproj", "{49C77717-3670-4688-8420-FE111E0402A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructWithRef", "StructWithRef\StructWithRef.csproj", "{42381BDA-3F07-400A-AFB8-D2D2BBA81483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVsStruct", "ClassVsStruct\ClassVsStruct.csproj", "{4F92C9F2-5DB0-4708-A290-37839029A8DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{49C77717-3670-4688-8420-FE111E0402A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49C77717-3670-4688-8420-FE111E0402A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49C77717-3670-4688-8420-FE111E0402A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42381BDA-3F07-400A-AFB8-D2D2BBA81483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42381BDA-3F07-400A-AFB8-D2D2BBA81483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42381BDA-3F07-400A-AFB8-D2D2BBA81483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42381BDA-3F07-400A-AFB8-D2D2BBA81483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F92C9F2-5DB0-4708-A290-37839029A8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F92C9F2-5DB0-4708-A290-37839029A8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F92C9F2-5DB0-4708-A290-37839029A8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F92C9F2-5DB0-4708-A290-37839029A8DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
