@@ -1,32 +1,26 @@
-´´´mermaid
+```mermaid 
 
     classDiagram
 
-    class Character
-    {
+    class Character{
         + Weapons[] : Weapon[]
         + Name : String
         + Fight() : void
     }
-    class Player
-    {
+    class Player{
         
     }
-    class Enemy
-    {
+    class Enemy{
         
     }
-    class Weapon
-    {
+    class Weapon{
         + Power : float
     }
-    class Gun
-    {
+    class Gun{
         + Ammo : int
         + FireGun() : void
     }
-    class Sword
-    {
+    class Sword{
         + BladeLength : float
         + AttackWithSword() : void
     }
@@ -37,4 +31,4 @@
     Weapon <|-- Sword
     Weapon -- Player 
     Weapon -- Enemy
-´´´
+```
