@@ -1,36 +1,28 @@
 ﻿using System;
 
-namespace TestGameUnits
+namespace GameUnits
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            if (args.Length == 0)
+            Unit[] units = new Unit[]
             {
-                Console.WriteLine("Please provide the required arguments.");
-                return;
+                new MilitaryUnit(3, 10, 2),
+                new MilitaryUnit(4, 5, 3),
+                new SettlerUnit(),
+            };
+
+            // Unidade 0 ataca unidade 1
+            (units[0] as MilitaryUnit).Attack(units[1]);
+            // Unidade 0 ataca unidade 2
+            (units[0] as MilitaryUnit).Attack(units[2]);
+
+            foreach (Unit u in units)
+            {
+                Console.WriteLine(u);
             }
 
-            try
-            {
-                // Test SettlerUnit
-                SettlerUnit settler = new SettlerUnit();
-                string settlerMoveResult = settler.Move();
-                Console.WriteLine($"SettlerUnit: {settlerMoveResult}, Health: {settler.Health}, Cost: {settler.Cost}");
-
-                // Test MilitaryUnit
-                MilitaryUnit military = new MilitaryUnit(1, 3, 5);
-                string militaryMoveResult = military.Move();
-                Console.WriteLine($"MilitaryUnit: {militaryMoveResult}, Health: {military.Health}, Cost: {military.Cost}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadLine();
         }
     }
 }
