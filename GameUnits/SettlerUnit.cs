@@ -2,7 +2,7 @@ public class Unit
 {
     public Unit(int attack, int defense)
     {
-        // Add validation and error handling here
+    
     }
 }
 
