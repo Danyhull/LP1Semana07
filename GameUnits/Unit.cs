@@ -1,22 +1,23 @@
-using System;
-
 namespace GameUnits
 {
     public abstract class Unit
     {
         private int movement;
-        public int Health { get; set; }
-        public abstract float Cost { get; }
+        public virtual int Health { get; set; }
 
         public Unit(int movement, int health)
         {
             this.movement = movement;
             Health = health;
         }
-
-        public void Move()
+        public int Move()
         {
-            Console.WriteLine($"A unit with {movement} movement has moved.");
+            return movement;
         }
+        public abstract float Cost{get; } 
+        public override string ToString(){
+            return $"{GetType().Name}- Hp={Health}" + 
+            $" Cost = {Cost.ToString("0.00")}";
+        } 
     }
 }
